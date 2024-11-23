@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Press+Start+2P&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+#mainContainer{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/Screenshot\ 2024-11-09\ 211649.png);
+    filter: brightness(0.9) drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+    
+}
+
+
+#headerArea {
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+#mainHeader {
+    font-family: "Press Start 2P", system-ui;
+    font-size: 6rem;
+    font-weight: 600;
+    font-style: normal;
+    
+
+}
+
+#optionSection {
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1%;
+    padding-left: 1%;
+}
+.btnClass{
+    font-size: 1.2rem;
+    border: none;
+    box-shadow: 2px 2px 20px rgb(3, 3, 255);
+}
+
+#mainSectionGame {
+    width: 100vw;
+    height: 72vh;
+    display: flex;
+   flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#displayXWiner{
+    width: 33%;
+    height: 90%;
+    font-size: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: darkblue;
+    text-shadow: 5px 5px 20px red;
+}
+#displayOWiner{
+    width: 33%;
+    height: 90%;
+    font-size: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: crimson;
+    text-shadow: 5px 5px 20px darkblue;
+}
+
+
+
+#gameContainer {
+    width: 33%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border: 1.2px solid orange;
+}
+
+.squareClass {
+    border: 1.2px solid orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    background-color: black;
+    opacity: 0.8;
+
+
+
+}
+
+.x::before {
+    content: "\2715";
+    font-size: 115px;
+    color:   rgb(255, 215, 0);;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.o::before {
+    content: "\25CB";
+    font-size: 220px;
+    color:lightblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="sass/style.css">
+</head>
+
+<body>
+    <div id="mainContainer">
+
+        <header id="headerArea">
+            <h1 id="mainHeader">Tic Tac Toe</h1>
+        </header>
+
+        <div id="optionSection">
+
+        
+            <div>
+                <select id="gameMode" class="btnClass">
+                    <option value="">Choose Game Mode</option>
+                    <option value="classic">Classic</option>
+                    <option value="revolving">Revolving</option>
+                </select>
+            </div>
+            <div>
+                <button id="startBtn" class="btnClass">Start Game</button>
+            </div>
+            <div>
+                <button id="restartBtn" class="btnClass">ReStart Game</button>
+            </div>
+            <div>
+                <button id="endGameBtn" class="btnClass">End Game</button>
+            </div>
+
+
+        </div>
+        
+
+
+
+
+        <div id="mainSectionGame">
+
+
+            <div id="displayXWiner"></div>
+            <div id="gameContainer">
+                <div class="squareClass"></div>
+                <div class="squareClass"></div>
+                <div class="squareClass"></div>
+                <div class="squareClass"></div>
+                <div class="squareClass"></div>
+                <div class="squareClass"></div>
+                <div class="squareClass"></div>
+                <div class="squareClass"></div>
+                <div class="squareClass"></div>
+            </div>
+            <div id="displayOWiner"></div>
+
+          
+
+
+
+        </div>
+
+    </div>
+
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pageBuilder8</title>
+    <link rel="stylesheet" href="sass/style.css">
+</head>
+
+<body>
+
+    <div class="sideBar" id="sideBar">
+
+        <h1>בונה מסך</h1>
+  
+        <div>
+            <label for="choseColor">בחר צבע</label>
+            <input id="choseColor" type="color">
+        </div>
+        
+
+        <input class="allInputs" id="widthScale" type="number" placeholder=" רוחב">
+        <input class="allInputs" id="heightScale" type="number" placeholder=" גובהה">
+
+
+        <input  class="allInputs" id="inseretPara" type="text" placeholder="תוכן">
+        <input  class="allInputs" id="choseFontSize" type="number" placeholder="גודל גופן" >
+
+        <select class="allInputs" name="fontColor" id="choseFontColor">
+            <option value="none">בחר צבע גופן</option>
+            <option value="red">אדום</option>
+            <option value="blue">כחול</option>
+            <option value="green">ירוק</option>
+            <option value="yellow">צהוב</option>
+            <option value="black">שחור</option>
+            <option value="brown">חום</option>
+            <option value="pink">ורוד</option>
+            <option value="white">לבן</option>
+            <option value="gray">אפור</option>
+           
+        </select>
+        <input  class="allInputs"  id="CbordrWidth" type="number" placeholder="עובי המסגרת">
+        
+        <select  class="allInputs" name="borderStyle" id="CborderStyle">
+            <option value="">סוג מסגרת</option>
+            <option value="solid">מלא</option>
+            <option value="dashed">מקווקו</option>
+            <option value="dotted">מנוקד</option>
+            <option value="double">כפול</option>
+            <option value="ridge">רכס</option>
+            <option value="inset">שקוע</option>
+            <option value="outset">ללא מסגרת</option>
+        </select>
+
+        <select class="allInputs" name="borderColor" id="choseBorderColor">
+            <option value="none">צבע מסגרת</option>
+            <option value="red">אדום</option>
+            <option value="blue">כחול</option>
+            <option value="green">ירוק</option>
+            <option value="yellow">צהוב</option>
+            <option value="black">שחור</option>
+            <option value="brown">חום</option>
+            <option value="pink">ורוד</option>
+            <option value="white">לבן</option>
+            <option value="gray">אפור</option>
+           
+        </select>
+
+        <input id="boxPadding" class="allInputs" type="number" placeholder="רווח פנימי">
+        <input id="boxMargin" class="allInputs"  type="number" placeholder="רווח חיצוני">
+        <input id="boxBRadius" class="allInputs"  type="number" placeholder="עיגול פינות">
+
+
+        
+
+
+        <button id="addBoxBtn">הוסף</button>
+
+        
+
+
+
+    </div>
+
+    <button class="btnSidebar" id="btnSidebar"></button>
+
+    <div class="container"></div>
+
+
+
+
+
+    <script src="j.s/script.js"></script>
+</body>
+
+</html>

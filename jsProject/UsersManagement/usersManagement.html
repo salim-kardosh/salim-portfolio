@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass/style.css">
+    <title>Users_Management</title>
+</head>
+
+<body>
+
+
+    <div id="mainContainer">
+        
+
+
+        <header id="htmlHeader">
+            <h1>מערכת ניהול משתמשים</h1>
+            <h2 class="h2Header">הרשמה</h2>
+            <p>להרשמה למערכת יש למלא את הפרטים</p>
+
+
+            <form id="inputsContainer">
+
+                <div class="form-group">
+                    <label for="firstNameInput" class="labelClass">שם פרטי</label>
+                    <input type="text" id="firstNameInput" class="inputStyle" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastNameInput" class="labelClass">שם משפחה</label>
+                    <input type="text" id="lastNameInput" class="inputStyle" required>
+                </div>
+                <div class="form-group">
+                    <label for="emailInput" class="labelClass">דוא"ל :(שם משתמש)</label>
+                    <input type="text" id="emailInput" class="inputStyle" required>
+                </div>
+                <div class="form-group">
+                    <label for="passwordInput" class="labelClass">סיסמה</label>
+                    <input type="password" id="passwordInput" class="inputStyle" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submitBtn">הרשמה</button>
+                </div>
+            </form>
+        </header>
+
+        <div id="signInSection">
+            <h2>התחברות</h2>
+            <p>כדי להתחבר למערכת, נשמח אם תוכל למלא את הפרטים שלך</p>
+            <form id="singInputsContainer">
+                <div class="form-group">
+                    <label for="emailInputSignIn" class="labelClass">דוא"ל :(שם משתמש)</label>
+                    <input type="text" id="emailInputSignIn" class="inputStyle" required>
+                </div>
+                <div class="form-group">
+                    <label for="passwordToSign" class="labelClass">סיסמה</label>
+                    <input type="password" id="passwordToSign" class="inputStyle" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submitBtnToSign">התחבר</button>
+                </div>
+
+            </form>
+
+
+        </div>
+        <div id="usersTableSection">
+            <h2>רשימת משתמשים</h2>
+            <table id="usersTable">
+                <thead>
+                    <tr>
+                        <th>שם פרטי</th>
+                        <th>שם משפחה</th>
+                        <th>דוא"ל:</th>
+                        <th>סיסמה</th>
+                        <th>סטטוס</th>
+                        <th>מחיקה</th>
+                        <th>עריכה</th>
+                        <th>התנתק</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div id="editModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>עריכת משתמש</h2>
+                <div id="editFormContainer">
+                    <form id="editForm">
+                        <div>
+                            <label for="editFirstName">שם פרטי :</label>
+                            <input type="text" class="updaitingInputs" id="editFirstName"  required>
+                        </div>
+                        <div>
+                        <label for="editLastName">שם משפחה :</label>
+                        <input type="text" class="updaitingInputs" id="editLastName"  required>
+                    </div>
+                    <div>
+                        <label for="editPassword">סיסמה :</label>
+                        <input type="password" class="updaitingInputs" id="editPassword"  required>
+                    </div>
+                    
+                        <button type="button" onclick="saveChanges()">שמור</button>
+                    
+                    </form>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+
+</html>

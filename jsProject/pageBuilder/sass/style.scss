@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    direction: rtl;
+}
+
+.sideBar{
+    width: 400px;
+    height: 100vh;
+    background:black;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transform: translateX(0);
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    padding-right: 30px;
+    padding-top: 50px;
+    overflow-y: auto;
+}
+.sideBar.hidden {
+    transform: translateX(100%); 
+}
+.btnSidebar{
+    width: 25px;
+    height: 70px;
+    background-color:gray;
+    border-radius: 10px 0 0 10px;
+    position:fixed;
+    right: 400px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    transition: transform 1s ease;
+    cursor: pointer;
+    
+    
+}
+.btnSidebar.hidden{
+right: 0; 
+    
+}
+
+.buttonsClass{
+    width: 100px;
+    height: 35px;
+    font-size: 20px;
+    background-color: magenta;
+    border: none;
+    cursor: pointer;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 400px;
+ 
+   
+}
+.allInputs{
+    height: 25px;
+    width: 300px;
+    margin-bottom: 5px;
+}
+#inseretPara{
+    height:80px;
+}
+
+#buttonsContainer{
+    display: flex;
+    gap: 100px;
+    margin-bottom: 10px;
+}
+.checkBoxContainer{
+    display: flex;
+    gap: 10px;
+}
+
+

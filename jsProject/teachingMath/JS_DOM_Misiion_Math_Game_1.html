@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MathGame_p_1</title>
+    <link rel="stylesheet" href="sass/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+</head>
+
+<body>
+    <div id="mainContainer">
+
+       
+
+        <div id="mathGameContainer">
+
+            
+
+            <div id="mainTitleDiv">
+                <h3 id="mainTitle">משחק ללימודי חשבון</h3>
+            </div>
+            <div id="optionsContainer">
+                <h3 id="optionTitle">אפשריות המשחק</h3>
+                <label for="numbersRange">בחר טווח מספרים</label>
+                <select name="" id="numbersRange">
+                    <option value="nan">בחר</option>
+                    <option value="1">1-10</option>
+                    <option value="2">1-100</option>
+                    <option value="3">1-1000</option>
+                </select>
+
+                <label for="choseOperatore">בחר אופרטור</label>
+                <select name="" id="choseOperatore">
+                    <option value="0">אקראי</option>
+                    <option value="1">+</option>
+                    <option value="2">-</option>
+                    <option value="3">/</option>
+                    <option value="4">*</option>
+                </select>
+                <button id="startButton" onclick="startGameFunc();">התחל את המשחק</button>
+            </div>
+
+            <div id="upperSideContainer">
+                <div id="numsContainer"></div>
+                    <input id="mainInput" type="number" required>
+                <button id="checkButton">בדוק</button>
+            </div>
+
+            <div id="downSideContainer">
+                <table >
+                    <thead>
+                        <tr id="firstLine">
+                           <th>תרגיל</th>
+                            <th>תשובה נכונה</th>
+                            <th>תשובה שהזנת</th>
+                            <th >נקודות</th>
+                        </tr>
+                    </thead>
+                    <tbody id="addARow">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="forAnimate" class="animate__animated"></div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

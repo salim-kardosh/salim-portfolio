@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  direction: rtl;
+}
+
+body {
+  margin: 0;
+  font-family: "Assistant", sans-serif;
+}
+
+select {
+  width: 100px;
+  height: 25px;
+  text-align: center;
+  font-size: 15px;
+  border: none;
+  margin-right: 4px;
+  background-color: rgb(226, 221, 221);
+}
+
+#mainContainer {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(48, 44, 44, 0.3)), url(../images/math_3.jpg);
+  padding: 2.3%;
+  display: flex;
+  flex-direction: row;
+}
+
+#mathGameContainer {
+  width: 50vw;
+  height: 93vh;
+  background-color: #f8eeee;
+}
+
+#optionsContainer {
+  width: 100%;
+  height: 21%;
+  padding: 10px 19px 0 0;
+}
+
+label {
+  font-size: 20px;
+}
+
+#optionTitle {
+  margin-bottom: 9px;
+  font-size: 20px;
+}
+
+#startButton {
+  width: 120px;
+  height: 25px;
+  cursor: pointer;
+  margin-right: 6px;
+  font-weight: 600;
+  border: none;
+  background: rgb(240, 226, 163);
+}
+
+#mainTitleDiv {
+  width: 100%;
+  height: 15%;
+  background-color: rgb(226, 221, 221);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#mainTitle {
+  font-size: 3rem;
+  color: rgb(4, 88, 118);
+}
+
+#upperSideContainer {
+  width: 100%;
+  height: 15%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+}
+
+#numsContainer {
+  width: 30%;
+  height: 37%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+}
+
+#mainInput {
+  width: 30%;
+  height: 37%;
+  border: none;
+  border: 2px solid gainsboro;
+  transition: background-color 0.3s;
+  font-size: 2.5rem;
+  direction: ltr;
+  text-align: center;
+}
+
+#checkButton {
+  width: 20%;
+  height: 37%;
+  font-size: 2rem;
+  border: none;
+  color: gainsboro;
+  background-color: rgb(46, 99, 127);
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#checkButton:hover {
+  background-color: rgb(30, 70, 90);
+}
+
+#downSideContainer {
+  width: 100%;
+  height: 48%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#firstLine {
+  background: rgb(192, 164, 216);
+}
+
+table {
+  text-align: center;
+  width: 84%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  border: none !important;
+}
+
+td {
+  font-size: 1rem;
+}
+
+tbody tr {
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+
+tbody tr:last-child {
+  border-bottom: none;
+}
+
+#forAnimate {
+  direction: ltr;
+  font-size: 8rem;
+  color: red;
+  margin-right: 9%;
+  margin-top: 15%;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */

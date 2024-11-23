@@ -1,0 +1,143 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 255, 0.3), rgba(255, 0, 0, 0.3)), url(../images/backGround2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: black;
+  color: white;
+}
+
+#gameContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#gameBoard {
+  display: grid;
+  grid-template-columns: repeat(15, 40px);
+  grid-template-rows: repeat(15, 40px);
+  gap: 2px;
+  background-color: #000;
+  border: 2px solid yellow;
+}
+
+.cell {
+  width: 39px;
+  height: 39px;
+  position: relative;
+  /*  background-color: #222;
+   border: 1px solid #444; */
+}
+
+.pacman {
+  background-color: yellow;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+  animation: openCloseMouth 0.3s infinite;
+}
+
+.pacman::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 23px;
+  width: 8px;
+  height: 8px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+@keyframes openCloseMouth {
+  0%, 100% {
+    -webkit-clip-path: none;
+            clip-path: none; /* מצב סגור - עיגול מלא */
+  }
+  50% {
+    -webkit-clip-path: polygon(43% 5%, 73% 14%, 91% 36%, 55% 57%, 89% 80%, 50% 99%, 20% 90%, 3% 66%, 2% 35%, 18% 16%);
+            clip-path: polygon(43% 5%, 73% 14%, 91% 36%, 55% 57%, 89% 80%, 50% 99%, 20% 90%, 3% 66%, 2% 35%, 18% 16%);
+  }
+}
+.wall {
+  border: 2px solid darkblue;
+}
+
+.food {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.ghost {
+  width: 30px;
+  height: 40px;
+  border-radius: 15px 15px 0 0;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.ghost-blue {
+  background-image: url(../images/pac_man_b.png);
+}
+
+.ghost-red {
+  background-image: url(../images/pac_man_r.png);
+}
+
+.ghost-yellow {
+  background-image: url(../images/pac_man_y.png);
+}
+
+.ghost-blue, .ghost-red, .ghost-yellow {
+  animation: float 1s infinite alternate;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+.super-food {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  background-color: blue;
+  border-radius: 50%;
+  margin: auto;
+  top: 30%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.ghost.scared {
+  background-color: blue !important; /* כחול כהה */
+  opacity: 0.7; /* שקיפות קלה */
+  animation: scaredPulse 1s infinite; /* אנימציה של פיעפוע */
+}
+
+@keyframes scaredPulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}/*# sourceMappingURL=style.css.map */

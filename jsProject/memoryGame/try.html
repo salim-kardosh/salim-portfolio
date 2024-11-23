@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>משחק זיכרון עם אפקט הופעה</title>
+    <style>
+        .card {
+            width: 100px;
+            height: 150px;
+            background-color: lightblue;
+            margin: 10px;
+            display: inline-block;
+            opacity: 0;
+            transform: scale(0.8);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .card.show {
+            opacity: 1;
+            transform: scale(1);
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">קלף 1</div>
+<div class="card">קלף 2</div>
+<div class="card">קלף 3</div>
+<div class="card">קלף 4</div>
+<div class="card">קלף 5</div>
+
+<script>
+    const cards = document.querySelectorAll('.card');
+
+    cards.forEach((card, index) => {
+        setTimeout(() => {
+            card.classList.add('show');
+        }, index * 400); // עיכוב של 300ms בין כל קלף
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Creepster", system-ui;
+}
+
+#mainContainer {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to right, rgba(50, 50, 50, 0.9), rgba(0, 0, 0, 0.9)), url(../images/backGroundlast_3.jpg);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3vh;
+}
+
+#mainHeader {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 11vh;
+  color: rgb(148, 16, 6);
+  text-shadow: 5px 5px 3px;
+}
+
+#optionsContainer {
+  width: 100vw;
+  height: 10vh;
+}
+
+#gameStarter {
+  font-family: "Creepster", system-ui;
+  font-size: 1.4em;
+  margin-right: 2vw;
+  width: 7vw;
+  height: 4vh;
+  color: #751407;
+  background-color: crimson;
+}
+
+#labelCardsNum {
+  color: blue;
+  font-size: 1.7em;
+}
+
+#cardsNumber {
+  width: 6vw;
+  height: 4vh;
+  font-size: 1.5em;
+  text-align: center;
+  color: #751407;
+}
+
+#cardsContainer {
+  width: 80vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2%;
+  margin-top: 10px;
+}
+
+.cardClass {
+  width: 10.5%;
+  height: 16vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/coverCardImg.png);
+  border-radius: 20px;
+  border: 1px solid black;
+  box-shadow: -10px -10px 50px rgb(253, 44, 9);
+  cursor: pointer;
+  transition: transform 0.8s;
+}
+
+.cardClass.flipped {
+  transform: rotateY(180deg);
+}
+
+.win-message {
+  color: green;
+  font-size: 6em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.win-message {
+  color: green;
+  font-size: 6em;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+.win-message.show {
+  opacity: 1;
+}/*# sourceMappingURL=style.css.map */

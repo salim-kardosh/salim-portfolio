@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>try</title>
+</head>
+<body>
+  
+    <script>
+      let usersArr = [];
+
+      if (typeof(Storage) !== "undefined"){
+        let saveFromLocalStorage = JSON.parse(localStorage.getItem("storedUsers"));
+        if(saveFromLocalStorage !== null && saveFromLocalStorage !==""){
+            console.log(saveFromLocalStorage);
+            usersArr.push(...saveFromLocalStorage);
+            usersArr.forEach(user => console.log(user));
+            
+        }
+      }else{
+        alert("localStorage is not supported in this browser");
+      }
+       
+      let users = [
+        {firstName:"sdfsdf",lastName:"sdffv"},
+        {firstName:"jhjh",lastName:"ytyt"},
+        {firstName:"uyty",lastName:"cvbvc"},
+        {firstName:"cbcvb",lastName:"aASA"},
+      ];
+      localStorage.setItem("storedUsers",JSON.stringify(users));
+
+      class newUser{
+        #password
+        constructor(firstName,lastName,password,loggedIn){
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.#password = password;
+            this.loggedIn =loggedIn;
+        }
+      }
+    </script>
+    
+</body>
+</html>
