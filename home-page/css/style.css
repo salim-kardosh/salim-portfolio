@@ -64,8 +64,7 @@ body {
   font-size: 33px;
   margin-right: 33%;
 }
-#round-pic-container {
-}
+
 
 #round-pic {
   width: 62px;
@@ -1010,4 +1009,64 @@ body {
   #footer-right {
     padding-right: 3%;
   }
+}
+#jsProjectArea{
+  width: 100vw;
+  height: 1400px;
+  background-color: blue;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  align-items: center;
+  gap: 3%;
+}
+.jsProjectsBox{
+  width: 21.09vw;
+  height: 54vh;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.jsPBoxUpSide{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1ae0ec;
+  border-radius: 10px 10px 0 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.jsPBottomSide{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #2c2c2c;
+  border-radius: 0 0 10px 10px;
+}
+#halloweenUp{
+  background-image: url(../imgs/prtfHalloween.png);
+}
+#pacManUp{
+  background-image: url(../imgs/prtfPacNan.png);
+}
+#pageBuilderUp{
+  background-image: url(../imgs/prtfPageBuilder.png);
+}
+#mathUp{
+  background-image: url(../imgs/prtfMath.png);
+}
+#ticTacToeUp{
+background-image: url(../imgs/prtfTictacToe.png);
+}
+#uManagementUp{
+  background-image: url(../imgs/prtfUserManagment.png);
 }
